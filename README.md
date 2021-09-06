@@ -4,24 +4,47 @@ Készítő<br>
 Óra, tárgy
 
 ---
+
 Tartalomjegyzék alcímekkel, számozott felsorolás.
 
 ---
 
 ## Alcím
- - unordered list
-     - **félkövér** vagy __félkövér__
-     - *dölt* vagy _dölt_
-     - ~~áthúzott~~
-     - `code snippet`
-     - <ins>Aláhúzás</ins>
-     - 
-     ```cs
-     code block, a nyelvet is meg lehet hozzá határozni
-     ```
- 1. ordererd list
- 2. asd
- 3. asd
+
+- unordered list
+  - **félkövér** vagy **félkövér**
+  - _dölt_ vagy _dölt_
+  - ~~áthúzott~~
+  - `code snippet`
+  - <ins>Aláhúzás</ins>
+  -
+  ```cs
+  code block, a nyelvet is meg lehet hozzá határozni
+  ```
+
+1.  ordererd list
+2.  asd
+3.  asd
     1. asd
- 4. asd
+4.  asd
+
 ### stb
+
+#### sort.py használata
+
+- minden tantárgynak van egy 3 karakteres idja
+
+```
+    buf : business_fundamentals
+    pro : programozas
+    szr : szamrend
+```
+
+- a fileok elnevezése:
+
+```
+    [prefix_date_title.md]
+    buf_2021.09.06_Bevezetes.md
+```
+
+- ezeket a fileokat csak a .upload mappába kell behúzni majd futtatni a sort.py scriptet: `python sort.py`
