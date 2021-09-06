@@ -14,7 +14,7 @@ Tartalomjegyzék alcímekkel, számozott felsorolás.
      - *dölt* vagy _dölt_
      - ~~áthúzott~~
      - `code snippet`
-     - <u>Aláhúzás</u>
+     - <ins>Aláhúzás</ins>
      - 
      ```cs
      code block, a nyelvet is meg lehet hozzá határozni
