@@ -1,5 +1,5 @@
 # Bevezetés
-2021-09-06
+2021-09-06 Nándi
 
 ```mermaid
 graph TB
