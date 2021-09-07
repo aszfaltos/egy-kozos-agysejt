@@ -44,7 +44,7 @@ Tartalomjegyzék alcímekkel, számozott felsorolás.
 
 ```
     [prefix_date_title_creator.md]
-    buf_2021.09.06_Bevezetes_Nándi.md
+    buf_2021.09.06_Bevezetes_Nandi.md
 ```
 
 - ezeket a fileokat csak a .upload mappába kell behúzni majd futtatni a sort.py scriptet: `python sort.py`
