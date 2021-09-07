@@ -8,9 +8,10 @@ src = "./.upload/"
 # dist dirs - files will be sorted into these dirs
 # var name is the three character id of the subject
 buf = "./business-fundamentals/"
-pro = "./programozas/"
+pro = "./programozas_eloadas/"
 szr = "./szamrend/"
-imp = "./imperativ_programozas/"
+imp = "./imperativ_eloadas/"
+# TODO: add impgy and progy
 
 # loads filenames in src dir to memory
 for path, subdirs, files in os.walk(src):
@@ -33,7 +34,7 @@ for path, subdirs, files in os.walk(src):
         if re.search("^szr", filename):
             shutil.copyfile(srcpath, szr + filename.replace("szr_", ""))
             os.remove(srcpath)
-        
+
         if re.search("^imp", filename):
             shutil.copyfile(srcpath, imp + filename.replace("imp_", ""))
             os.remove(srcpath)
