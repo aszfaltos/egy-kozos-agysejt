@@ -35,10 +35,12 @@ Tartalomjegyzék alcímekkel, számozott felsorolás.
 - minden tantárgynak van egy 3 karakteres idja
 
 ```
-    buf : business_fundamentals
-    pro : programozas
+    buf : business-fundamentals
+    pro : programozas-eloadas
+    progy : programozas-gyak
     szr : szamrend
-    imp : miperativ_programozas
+    imp : imperativ-eloadas
+    impgy : imperativ-gyak
 ```
 
 - a fileok elnevezése:
