@@ -38,6 +38,7 @@ Tartalomjegyzék alcímekkel, számozott felsorolás.
     buf : business_fundamentals
     pro : programozas
     szr : szamrend
+    imp : miperativ_programozas
 ```
 
 - a fileok elnevezése:
