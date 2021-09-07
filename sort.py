@@ -10,6 +10,7 @@ src = "./.upload/"
 buf = "./business-fundamentals/"
 pro = "./programozas/"
 szr = "./szamrend/"
+imp = "./imperativ_programozas/"
 
 # loads filenames in src dir to memory
 for path, subdirs, files in os.walk(src):
@@ -31,4 +32,8 @@ for path, subdirs, files in os.walk(src):
 
         if re.search("^szr", filename):
             shutil.copyfile(srcpath, szr + filename.replace("szr_", ""))
+            os.remove(srcpath)
+        
+        if re.search("^imp", filename):
+            shutil.copyfile(srcpath, imp + filename.replace("imp_", ""))
             os.remove(srcpath)
