@@ -1,0 +1,37 @@
+# Számítástechnikai rendszerek elődadás, első óra jegyzete
+- Készítette: Huszár Gergő
+- Tárgy: számítástechnikai rendszerek, elődadás
+
+---
+1. Bevezetés
+2. Tárgyról
+---
+# Bevezetés
+- **Elérhetőség:** Illés Zoltán, illes@inf.elte.hu
+- http://to.ttk.elte.hu/oktatoi-tanrend : sok jó infó
+- https://election.inf.elte.hu/ : interaktív dolgok
+- Ha van teljesítmény akkor nem gond ha a megengedettnél többet hiányzunk.
+# Tárgyről
+- Közös bevezető az összes tantárgyhoz
+- Közös nevező kialakítása
+- Unix, Win alapok
+- Főleg Unix
+- Windows for subsystem WSL (?) ennek a 2. verziója.
+- SUSE linux enterprise server 12, érdemes feltenni
+  - HyperV linux szerver indul el
+- Rengeteg programozás lesz
+  - Unix linux, shall script
+  - Windows Power Shell <-- erre fokuszálunk
+- Tárgy oldala: http://szamrend.iinf.elte.hu
+- Vizsgák
+  - 4 ZH
+    - Ezek nagyrészben **gyakorlaton**
+    - Az **utolsó lesz elméleti** Canvas teszt 20 perc, 20 kérdés
+  - 3 beadandó lesz
+    - [Canvason](https://canvas.elte.hu/courses/20399) lehet megtalálni
+- Sok parancsot már **most kéne tudni**
+  - Hozzá irodalom:
+    - https://www.linux.com/learn
+    - http://www.microsoftvirtualacademy.com/
+    - http://www.powershell.com
+      - Ebből magyar: http://mek.oszk.hu/10400/10402
