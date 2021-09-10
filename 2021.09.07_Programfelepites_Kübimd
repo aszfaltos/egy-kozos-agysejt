@@ -1,10 +1,25 @@
 # Programok felépítése
 
 Kübler Ákos<br>
-Imperatív programozás EA<br>
+1 óra, Imperatív programozás EA<br>
 
 ---
-1. 
+1. Mit csinál?
+2. Programok felépítése
+    1. Egyszerű utasítások
+    2. Vezérlési szerkezetek
+    3. Kiírások
+4. Típusok
+    1. Szerepük
+    2. Ellenőrzés
+    3. Statikus és dinamikus típusrendszer
+    4. Erősen és gyengén típusos nyelv
+    5. Típusok C-ben
+5. Alprogramok
+    1. Főprogram
+6. Megjegyzés
+7. Modul
+    1. Modulokra bontás
 ---
 Mit csinál?
 - Utasítások, vezérlési szerkezetek
@@ -24,14 +39,15 @@ Programok felépítése
 - modulok (könyvtárok, osztályok, csomagok)
 
 Python példa:<br>
-def factorial(n):<br>
+`def factorial(n):<br>
     result = 1
     for i in range(2,n+1):
         result *= 1
     return result`
 
-Ugyanez C-ben
-int factorial( int n )
+Ugyanez C-ben:
+
+`int factorial( int n )
 {
     int result = 1;
     int i;
@@ -40,20 +56,21 @@ int factorial( int n )
         result *= i;
     }
     return result;
-}
+}`
 
-Egyszerű utasítások
+### Egyszerű utasítások
 - értékadás
 - üres utasítás (C-ben ;)
 - alprogramhívás
 - visszatérés függvényből
 
-Vezérlési szerkezetek
+### Vezérlési szerkezetek
 - elágazások
 - ciklusok stb.
 
-KAPCSOS ZÁRÓJELEK!!!
+## KAPCSOS ZÁRÓJELEK!!!
 
+### Kiírások
 Szabványos kiírás C-ben:<br>
 `printf("%d\n", factorial(10))`<br>
 \n - soremelés<br>
@@ -63,7 +80,7 @@ Szabványos kiírás C-ben:<br>
 `print("10! =", factorial(10), ", ln10 =", log(10))`<br>
 `printf("10! = %d, ln(10) = %f\n", factorial(10), log(10));`
 
->## Típusok:
+## Típusok:
 - Kifejezik egy bitsorozat értelmezési módját
 - Meghatározzák milyen értéket vehet fel egy változó
 - Megkötik, hogy műveleketeket milyen értékekkel végezhetünk el
@@ -97,7 +114,7 @@ Szabványos kiírás C-ben:<br>
 - int* - mutató (pointer) egy egész számra
 - struktúrák (pl. int, char, float) stb.
 
->## Alprogramok (függvények)
+## Alprogramok (függvények)
 - több lépéses számítás leírása
 - többször használatos, paraméteres
 - program strukturálása
@@ -112,11 +129,11 @@ Szabványos kiírás C-ben:<br>
 Ezzel kezdődik és végződik, de közben más alprogram hívhat
 Ha a main nem nulla értéket ad vissza, hiba történt
 
->## Megjegyzés
+## Megjegyzés
 - Python `#blablabla`
 - C: `/*blablabla*/`
 
->## Modul
+## Modul
 - modularitás egységbe zárt, független
 - újrafelhasználható
     - pl. a nyelv szabványos könyvtára
