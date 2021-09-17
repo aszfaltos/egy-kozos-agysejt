@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 
 
 int reverseInt(int le, int fel){
