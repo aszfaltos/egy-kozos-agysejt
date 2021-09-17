@@ -27,5 +27,6 @@ int main(){
 	} else {
 		printf("A szám nem palindrom.\n");
 		printf("%d != %d\n",szam,rev);
-	}	
+	}
+	return 0;
 }
