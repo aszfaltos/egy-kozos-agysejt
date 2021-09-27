@@ -31,7 +31,7 @@ for path, subdirs, files in os.walk(src):
         if re.search("^pro", filename):
             shutil.copyfile(srcpath, pro + filename.replace("pro_", ""))
             os.remove(srcpath)
-            
+
         if re.search("^progy", filename):
             shutil.copyfile(srcpath, progy + filename.replace("progy_", ""))
             os.remove(srcpath)
@@ -43,7 +43,7 @@ for path, subdirs, files in os.walk(src):
         if re.search("^imp", filename):
             shutil.copyfile(srcpath, imp + filename.replace("imp_", ""))
             os.remove(srcpath)
-            
+
         if re.search("^impgy", filename):
             shutil.copyfile(srcpath, impgy + filename.replace("impgy_", ""))
             os.remove(srcpath)
