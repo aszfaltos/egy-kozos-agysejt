@@ -46,6 +46,13 @@ int avgHeight(int size,struct Person people[]){
   return sum/size;
 }
 
+int avgAge(int size, struct Person people[]){
+  if (size==1) {
+    return people[size-1].age;
+  }
+  return (people[size-2].age + people[size-1].age)/2;
+}
+
 int main(int argc, char const *argv[]) {
   struct Person people[5];
 
@@ -65,6 +72,7 @@ int main(int argc, char const *argv[]) {
   }
 
   printf("%s%d\n", "Az atlag magassag: ", avgHeight(5, people) );
+  printf("%s%d\n", "Az atlag eletkor: ", avgAge(5, people) );
 
   return 0;
 }
