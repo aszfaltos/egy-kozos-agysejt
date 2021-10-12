@@ -17,10 +17,10 @@ Product *find(int const length, Product const *const product, enum Size searchFo
 
 int main()
 {
-	Product prods[3] = {{Small, 0.5f},
+	Product prods[3] = {{Small, 12.5f},
 											{Medium, 4.5f},
-											{Large, 6.5f}};
-	Product *prod = find(3, prods, Medium);
+											{Small, 6.5f}};
+	Product *prod = find(3, prods, Small);
 	printf("Size: %d, price: %f\n", prod->size, prod->price);
 
 	return 0;
@@ -28,11 +28,14 @@ int main()
 
 Product *find(int const length, Product const *const product, enum Size searchFor)
 {
-	int i = 0;
-	while (i < length && product[i].size != searchFor)
+	int minI = 0;
+	for (int i = 0; i < length; i++)
 	{
-		++i;
+		if (product[i].size == searchFor && product[minI].price > product[i].price)
+		{
+			minI = i;
+		}
 	}
 
-	return &product[i];
+	return &product[minI];
 }
