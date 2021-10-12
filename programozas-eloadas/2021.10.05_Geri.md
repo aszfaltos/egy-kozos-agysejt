@@ -1,0 +1,102 @@
+# Programozás előadás jegyzete: tesztelés, hibakeresés
+- Készítő: Huszár Gergő
+- Tárgy: Programozás, gyakorlat
+
+---
+1. Tesztelés
+   1. Elvei
+   2. Módszerei
+      1. Statikus
+      2. Dinamikus
+         1. Fekete doboz módszerek
+         2. Szürke doboz módszerek
+         3. Fehér doboz módszerek
+   3. Speciális tesztelések
+   4. Autómatikus tesztelés
+   5. Véletlen tesztelés
+2. Hibakeresés
+   1. Segédeszközök
+3. Hiba javítás
+---
+
+# Tesztelés
+- Célja, hogy kimutassuk, hogy hibásan fut a programunk
+- *Teszteset*: Bemenet és kimenet
+- *Próba*: teszteset-halmaz
+- *Jó teszteset*: nagy valószínűséggel felfedetlen híbát mutat ki
+- *Ideális próba*: minden hibát kimutat
+- *Megbízható próba*: nagy valószínűséggel minden hibát kimutat
+## Elvei
+- Mindenféle bemenetre tesztelni kell
+  - Hibás
+  - Érvényes
+- Más tudja jól tesztelni
+  - Más a gondolkodása mint a készítőjé
+- Rossz, ha nem tudjuk megismételni
+## Módszerei
+- Statikus
+  - Program szövegét vizsgáljuk
+  - A program nem fut
+- Dinamikus
+  - Futtatjuk a programot és annak menetét ellenőrizzük
+### Statikus 
+- Kód ellenőrzése
+  - algorimus \<-\> kód összehasonlítása, másnak való elmagyarázása
+- Szintaktikus ellenőrzés
+  - Fordító esetén ez könnyű
+    - Nem biztos, hogy kellően szigorú
+  - Értelmező esetén sokszor kell futtatgatni
+- Szemantikus ellenőrzés
+  - Felhasználatlan változók
+### Dinamikus
+- Fekete doboz
+  - Bementet és kimenetet tudjuk csak
+  - A program struktúráját nem ismerjük
+  - A specifikáció alapján fut
+- Fehér doboz
+  - Ismerjük a program működését
+- Szürke doboz
+  - A program típusait tudjuk
+#### Fekete doboz módszerek
+- Ekvivalencia-osztályok módszere
+- Határeset elemzés módszere
+#### Szürke doboz módszerek
+- Összegzés
+- Megszámolás
+- Kiválasztás
+- Keresés
+- Maximum-kiválasztás
+#### Fehér doboz módszerek
+- Stratégiát kell választani a program szerkezete alapján
+  - Ez tesztutakat jelől ki
+  - Kipróbálási stratégiák
+    - utasítás lefedés
+      - Minden utasítás hatjsunk végre
+    - feltétel lefedés
+      - Minden feltétel legyen 1-1-szer igaz vagy hamis
+    - részfeltétel lefedés 
+      - Minden részfeltétel legyen 1-1-szer igaz vagy hamis
+- Teszteset generálás
+  - Bázisutak amelyek a program kezdetétól elágazás vagy az elágazások ágától elágazá,ciklusig vagy a program végéig tart
+  - Ezek lehetnek tesztutak is
+## Speciális tesztelések
+## Autómatikus tesztelés
+- Tesztek generálása
+  - Kézi
+  - Autómatikus
+    - Szabályos
+    - Véletlenszerű
+- Teszt futtatása
+  - Kézi
+  - Autómatikus
+## Véletlen tesztelés
+- Véletlen számokkal dolgozunk
+- A bemeneti változóknak random értékeket adunk
+# Hibakeresés
+- Célja a hiba okának megkeresése
+## Segédeszközök
+- Kiírások
+- Breakpoint alkalmazása
+# Hiba javítás
+- A javítás máshol is hibát okozhat
+- Hibajavítás után a tesztelés menetét meg kell ismételni
