@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+# Írjunk shell script programot, ami kiszámolja egy szám (n) faktoriálisát!
+
+((fakt = 1))
+read n
+for i in $(seq 1 $n)
+do
+	((fakt=fakt*i))
+done
+
+echo $fakt
